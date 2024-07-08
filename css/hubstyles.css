@@ -24,7 +24,6 @@ nav ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #333;
 }
 
 nav ul li {
@@ -35,12 +34,6 @@ nav ul li a {
     color: #e0e0e0;
     text-decoration: none;
     font-weight: bold;
-    padding: 10px;
-    display: block;
-}
-
-nav ul li a:hover {
-    background-color: #575757;
 }
 
 main {
@@ -90,6 +83,21 @@ footer {
     article {
         flex: 1 1 calc(50% - 40px); /* Two columns on smaller screens */
     }
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+    article {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    footer {
+        position: static;
+    }
 }
 
 @media (max-width: 480px) {
@@ -97,3 +105,5 @@ footer {
         flex: 1 1 100%; /* Full width on very small screens */
     }
 }
+
+

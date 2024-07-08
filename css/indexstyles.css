@@ -86,3 +86,20 @@ footer {
     text-align: center;
     padding: 1rem 0;
 }
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+    article {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    footer {
+        position: static;
+    }
+}
