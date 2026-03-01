@@ -61,15 +61,11 @@
         <p></p>
     </footer>
 <script>
-    // 1. Identify the container (main) where your articles live
     const mainContainer = document.querySelector('main');
 
-    // 2. Set the probability (0.2 = 20% chance, 0.5 = 50% chance, etc.)
     const spawnChance = 0.2;
 
-    // 3. Check if the "roll" is successful
     if (Math.random() < spawnChance) {
-        // Define the HTML structure exactly as you provided
         const bradArticle = `
             <article>
                 <h2>REDACTED</h2>
@@ -78,8 +74,6 @@
             </article>
         `;
 
-        // 4. Inject it into the <main> tag
-        // 'beforeend' puts it at the end of the list
         mainContainer.insertAdjacentHTML('beforeend', bradArticle);
     }
 </script>
