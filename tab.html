@@ -7,6 +7,7 @@
     <link rel="icon" href="images/eden.png">
     <link rel="stylesheet" href="css/hubstyles.css">
 </head>
+
 <body>
     <header>
         <h1>The Assassins Brotherhood (TAB)</h1>
@@ -54,5 +55,28 @@
     <footer>
         <p></p>
     </footer>
+<script>
+    // 1. Identify the container (main) where your articles live
+    const mainContainer = document.querySelector('main');
+
+    // 2. Set the probability (0.2 = 20% chance, 0.5 = 50% chance, etc.)
+    const spawnChance = 0.3;
+
+    // 3. Check if the "roll" is successful
+    if (Math.random() < spawnChance) {
+        // Define the HTML structure exactly as you provided
+        const bradArticle = `
+            <article>
+                <h2>REDACTED</h2>
+                <p>B̴̵̸̡̹̞̟̻̼̤͔̟̯̺̔̓͑̄͆ͥͦ̀͂̍ͨͩͣ̿̉ͩ̕͝͠͠͝_͉̲̉͗ͤͮ̌r̨̛̹͎̭ͮ̅ͫ͞a͓̙͈̻̭̮̭̦̜̳̪ͬ̌̌̄́ͩ̉ͥͯͪ͢͝͡d̡͚̞̊̏͑̾͞D̊̀͊ḙ͈̖̘̓̏̇͢m̵̵̛̛̩͎̜̜̝͈̻̩̻͍̙̺͇̣ͥͩͩ̔̂̐̿͛̍ͧ̇̃̂̊͐ͤ̊̒̕͘͜͡͞ͅǎ̛̤̰͑͊͌ş͓͍͌̿ç̸̳͚̹̮̻̺̑̃̌̌_̴̸̛̤̫͓͎̜̥̀̓̓ͬ̑͌ͫ͐̌̊̈́ͨͭ̊̊̕͠ͅu̡̨̘͖͚͊ͮͪ̿ͫ̄̏͗͋ͪ̕͝s̵̶̵̛̬̙̺̘͈ͦ̀̓̾ͮ͆́͂̔ͯ̂̑̚͠</p>
+                <a href="tabstories/REDACTED.html">Read More</a>
+            </article>
+        `;
+
+        // 4. Inject it into the <main> tag
+        // 'beforeend' puts it at the end of the list
+        mainContainer.insertAdjacentHTML('beforeend', bradArticle);
+    }
+</script>
 </body>
 </html>
